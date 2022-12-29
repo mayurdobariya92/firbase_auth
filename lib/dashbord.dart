@@ -34,7 +34,7 @@ class _dashbordState extends State<dashbord> {
       ],),body: Column(children: [
         Text("${user!.displayName}"),
       Text("${user!.email}"),
-      Text("${user!.photoURL}"),
+      Image.network("${user!.photoURL}"),
       Text("${user!.phoneNumber}"),
     ]),
     );

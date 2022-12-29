@@ -10,7 +10,7 @@ void main() async {
   await Firebase.initializeApp(
     
   );
-  runApp(MaterialApp(home: phonenumber(),));
+  runApp(MaterialApp(home: fireauth(),));
 }
 class fireauth extends StatefulWidget {
   const fireauth({Key? key}) : super(key: key);
