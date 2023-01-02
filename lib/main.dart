@@ -1,4 +1,6 @@
 import 'package:firbase_auth/dashbord.dart';
+import 'package:firbase_auth/firebase_Cloud_database.dart';
+import 'package:firbase_auth/firebase_realtime_database.dart';
 import 'package:firbase_auth/phonenumber.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -10,7 +12,7 @@ void main() async {
   await Firebase.initializeApp(
     
   );
-  runApp(MaterialApp(home: fireauth(),));
+  runApp(MaterialApp(home: clouddatabase(),));
 }
 class fireauth extends StatefulWidget {
   const fireauth({Key? key}) : super(key: key);
